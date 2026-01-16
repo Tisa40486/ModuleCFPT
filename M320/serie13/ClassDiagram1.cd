@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="serie13.Voiture">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAABAEAAAAAAAAACEAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Voiture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serie13.Vehicule">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEEBAAAQAEAAAAAAAAAAEAAAAAAAAAAABAAEA=</HashCode>
+      <FileName>Vehicule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serie13.Parc">
+    <Position X="4.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAEQQAQAEAAQAAAAQEAACEAAAAAAAAABAAAA=</HashCode>
+      <FileName>Parc.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_vehicules" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="serie13.Avion">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAABAIAAAEAAAAAAAAAAAAAUAAAAAAAAAAAAA=</HashCode>
+      <FileName>Avion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serie13.FrmVehicules">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <Members>
+      <Field Name="btnAddAvion" Hidden="true" />
+      <Field Name="btnAddVoiture" Hidden="true" />
+      <Field Name="btnDelParc" Hidden="true" />
+      <Field Name="btnDelVehicule" Hidden="true" />
+      <Field Name="btnMoins" Hidden="true" />
+      <Field Name="btnParc" Hidden="true" />
+      <Field Name="btnPlus" Hidden="true" />
+      <Field Name="cbMoteur" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="gbAvion" Hidden="true" />
+      <Field Name="gbDetailsVehicule" Hidden="true" />
+      <Field Name="gbParc" Hidden="true" />
+      <Field Name="gbStats" Hidden="true" />
+      <Field Name="gbVehicules" Hidden="true" />
+      <Field Name="gbVoiture" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="lblAnnee" Hidden="true" />
+      <Field Name="lblChangePrix" Hidden="true" />
+      <Field Name="lblCylindree" Hidden="true" />
+      <Field Name="lblHeures" Hidden="true" />
+      <Field Name="lblKm" Hidden="true" />
+      <Field Name="lblMarque" Hidden="true" />
+      <Field Name="lblMoteur" Hidden="true" />
+      <Field Name="lblNbPortes" Hidden="true" />
+      <Field Name="lblPays" Hidden="true" />
+      <Field Name="lblPrix" Hidden="true" />
+      <Field Name="lblPuissance" Hidden="true" />
+      <Field Name="lblStats" Hidden="true" />
+      <Field Name="lblTitre" Hidden="true" />
+      <Field Name="lblVehicule" Hidden="true" />
+      <Field Name="lblVille" Hidden="true" />
+      <Field Name="lsParcs" Hidden="true" />
+      <Field Name="lsVehicules" Hidden="true" />
+      <Field Name="nupAnnee" Hidden="true" />
+      <Field Name="nupAnneeAvion" Hidden="true" />
+      <Field Name="nupCylindree" Hidden="true" />
+      <Field Name="nupHeures" Hidden="true" />
+      <Field Name="nupKm" Hidden="true" />
+      <Field Name="nupNbPortes" Hidden="true" />
+      <Field Name="nupPrixAvion" Hidden="true" />
+      <Field Name="nupPrixChange" Hidden="true" />
+      <Field Name="nupPrixVoiture" Hidden="true" />
+      <Field Name="nupPuissance" Hidden="true" />
+      <Field Name="txtMarque" Hidden="true" />
+      <Field Name="txtMarqueAvion" Hidden="true" />
+      <Field Name="txtPays" Hidden="true" />
+      <Field Name="txtVille" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QcIBEElAsCUEUFKAABHDBFiCIGBERAIIgUAUgEyUAAg=</HashCode>
+      <FileName>FrmVehicules.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="parcs" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Fira';
+  src: url('/font/FiraSans-Italic.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+Header h1 {
+  text-align: center;
+  color: #FFF;
+  font-size: 300px;
+  margin-top: 10%;
+  font-family: 'Fira',
+}
+
+.Header-index h1 {
+  text-align: center;
+  color: #FFF;
+  font-size: 300px;
+  font-family: 'Fira';
+  margin-top: 20%;
+
+}
+
+.container-fluid img {
+  width: auto;
+  height: 50px;
+}
+
+main h1 {
+  text-align: center;
+  color: #FFF;
+  font-size: 150px;
+  margin-top: 30%;
+  font-family: 'Fira';
+}
+
+.img-group img {
+  width: 50px;
+  height: 50px;
+}
+
+.project {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  gap: 75px;
+  justify-content: center;
+}
+
+.card {
+  width: 190px;
+  height: 254px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.card-body h5 {
+  text-align: center;
+}
+.card-body p{
+  text-align: center;
+}
+
+.card-title {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#animation .text-xl {
+  font-size: 1.5rem;
+  color: currentColor;
+  letter-spacing: 0.06em;
+}

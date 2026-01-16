@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "frais_livraison-v3", "frais_livraison-v3\frais_livraison-v3.csproj", "{84D852A6-E537-47FB-98A3-C91160BC23F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84D852A6-E537-47FB-98A3-C91160BC23F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D852A6-E537-47FB-98A3-C91160BC23F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D852A6-E537-47FB-98A3-C91160BC23F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D852A6-E537-47FB-98A3-C91160BC23F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2729DD9-3478-47BA-8A35-C92855E36C03}
+	EndGlobalSection
+EndGlobal
