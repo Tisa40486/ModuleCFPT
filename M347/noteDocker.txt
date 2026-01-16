@@ -23,3 +23,20 @@ Avantage :
  
 Inconvenients : 
 isolation moindre que les VM
+
+
+
+Push in dockerhub
+<user>/<repository>
+
+hey
+
+
+
+Stack LAMP
+⦁	Linux
+⦁	Apash
+⦁	MariaDB
+⦁	PHP
+
+le conteneur est immuable, les donn
