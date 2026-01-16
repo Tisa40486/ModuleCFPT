@@ -1,0 +1,6 @@
+/// <summary>
+/// Projet:
+/// Détails: 
+/// Auteur: Mattis Lefranc-Adam
+/// Date: 21/11/25
+/// </summary>

@@ -400,12 +400,9 @@ FodyWeavers.xsd
 *.sln.iml
 
 ### Text ###
-*.doc
-*.docx
 *.msg
 *.pages
 *.rtf
-*.txt
 *.wpd
 *.wps
 
