@@ -75,5 +75,17 @@ Stack **LAMP**
 
 
 
-le conteneur est immuable, les donn
+le conteneur est immuable, les donnees
 
+
+ligne de cmd 
+- docker --version
+- docker pull hello-world
+- docker run hello-world
+- docker images
+- docker run -it ubuntu bash
+- docker login
+- docker commit mon-serveur-web [user]/mon-nginx-personnalise
+- docker push [user]/mon-nginx-personnalise
+- docker run debian echo "Hello world"
+- exit (for bash)
