@@ -89,3 +89,11 @@ ligne de cmd
 - docker push [user]/mon-nginx-personnalise
 - docker run debian echo "Hello world"
 - exit (for bash)
+- docker run -it --name volume-test_1 --mount type=volume,src=data-test,dst=/data volume-test (Create Volume)
+- docker build -t apache-server:optimized . (Create image)
+
+
+### Docker Compose
+
+**Installation**: sudo apt update && sudo apt install docker-compose-plugin 
+

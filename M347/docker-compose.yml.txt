@@ -1,0 +1,38 @@
+services: 
+  db: 
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    networks:
+      - back_net
+      - bd_net
+    volumes : 
+      - ./mysql:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: bd
+      MYSQL_ROOT_PASSWORD: example
+    networks:
+      - bd_net
+    ports: 
+      - "8081:80"
+    depends_on:
+      - bd
+
+  api:
+    image: php:7.4-apache
+    networks:
+      - front_net
+      - back_net
+    volumes:
+      - ./php:/var/www/html/
+    depends_on:
+       - bd
+  web: 
+    image: httpd:alpine
+    
+
+
+
