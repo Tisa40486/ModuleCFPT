@@ -1,0 +1,12 @@
+[
+  {"_key": "edge1", "from": "../nodes/A", "to": "../nodes/B"},
+  {"_key": "edge2", "from": "../nodes/A", "to": "../nodes/C"},
+  {"_key": "edge3", "from": "../nodes/A", "to": "../nodes/D"},
+
+  {"_key": "edge4", "from": "../nodes/B", "to": "../nodes/E"},
+  {"_key": "edge5", "from": "../nodes/B", "to": "../nodes/F"},
+
+  {"_key": "edge6", "from": "../nodes/D", "to": "../nodes/G"},
+  {"_key": "edge7", "from": "../nodes/D", "to": "../nodes/H"},
+  {"_key": "edge8", "from": "../nodes/D", "to": "../nodes/I"}
+]
