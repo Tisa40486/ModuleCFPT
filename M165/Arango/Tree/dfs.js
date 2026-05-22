@@ -60,8 +60,3 @@ d.addChild(m);
 d.addChild(n);
 
 DFS(root);
-
-function BFS()
-{
-
-}
