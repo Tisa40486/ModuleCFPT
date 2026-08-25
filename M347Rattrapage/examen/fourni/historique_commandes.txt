@@ -1,0 +1,51 @@
+   88  docker compose hello-word
+   89  docker run hello-word
+   90  docker run hello-world
+   94  code dockerfile 
+   95  docker build -t 
+   96  docker start
+   97  docker  run -it 
+   98  docker build -t test
+   99  docker build -t test .
+  100  docker ps
+  101  docker images
+  102  docker run test:latest
+  103  docker build -t test .
+  104  docker run test:latest
+  105  docker compose up -d --build
+  106  docker compose down -v
+  107  docker ps
+  108  docker compose up -d --build
+  110  docker compose down -v
+  112  docker compose up -d --build
+  114  docker compose down -v
+  115  docker compose up -d --build
+  117  docker compose down -v
+  118  docker compose up -d --build
+  120  docker compose down -v
+  121  docker compose up -d --build
+  122  docker compose down -v
+  125  docker compose up -d --build
+  126  docker compose down -v
+  127  docker volume prune
+  128  docker compose up -d --build
+  129  docker compose down -v
+  130  docker compose up -d --build
+  131  docker compose down -v
+  132  docker compose up -d --build
+  133  docker compose down -v
+  134  docker compose up -d --build
+  135  docker compose down -v
+  136  docker compose up -d --build$
+  137  docker compose up -d --build
+  138  docker compose down -v
+  139  docker compose up -d --build
+  140  docker compose down -v
+  141  docker compose up -d --build
+  142  docker compose down -v
+  143  docker compose up -d --build
+  144  docker compose down -v
+  145  docker compose up -d --build
+  148  | Where-Object CommandLine -Like "*docker*"
+  151  Get-History | Where-Object CommandLine -Like "*docker*" | Select-Object -ExpandProperty CommandLine | Out-File historique_commandes.txt
+  153  history | grep docker > historique_commandes.txt

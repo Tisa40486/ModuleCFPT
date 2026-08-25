@@ -1,0 +1,26 @@
+services:
+  php-app:
+    build: ./php-app 
+    ports:
+      - "8080:80"
+    networks:
+      - back_net
+      - front_net
+
+  mariadb:
+    image: mariadb:11
+    build: ./db
+    environment:
+      MARIADB_ROOT_PASSWORD: root_secret
+      MARIADB_DATABASE: site_db
+      MARIADB_USER: app_user
+      MARIADB_PASSWORD: app_pass
+    networks:
+      - back_net
+
+networks:
+  front_net:
+    driver: bridge
+  back_net:
+    driver: bridge
+    internal: true
