@@ -1,42 +1,49 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-// See https://aka.ms/new-console-template for more information
-
-namespace test
+﻿namespace UE02
 {
-    public record Voiture(string Marque, string Modele, int Prix, string Carburant, int Kilometrage,int Annee);
-
     public class App()
     {
+        static bool MoinsDe100k(Voiture v) {return v.Kilometrage > 100000;}
+        static bool EstElectrique(Voiture v){return v.Carburant == "électrique";}
+        static bool EstDiesel(Voiture v) { return v.Carburant == "diesel";}
+        static bool EstRecent(Voiture v){return v.Annee >= 2021;}
         static void Main(string[] args)
         {
-            Func<double, double> remise = RetirerRemiseFixe;
-            Func<double, double> tva = AjouterTva;
-
-            double prix = 18000;
-            double remisePuisTva = tva(remise(prix));
-            double tvaPuisRemise = remise(tva(prix));
-
-            Console.WriteLine($"{remisePuisTva:F2} CHF");
-            Console.WriteLine($"{tvaPuisRemise:F2} CHF");
-            
             List<Voiture> catalogue = Donnée.ChargerCatalogue();
-            Console.WriteLine(EtiquetteDe(catalogue[0]));
+            Console.WriteLine("------- EST RECENT---------");
+            Afficher(catalogue, EstRecent);
+            Compter(catalogue, EstRecent);
+            Console.WriteLine("------- EST DIESEL---------");
+            Afficher(catalogue, EstDiesel);
+            Compter(catalogue, EstDiesel);
+            Console.WriteLine("------- EST ELEC---------");
+            Afficher(catalogue, EstElectrique);
+            Compter(catalogue, EstElectrique);
+            Console.WriteLine("------- Moins de 100k---------");
+            Compter(catalogue, MoinsDe100k);
         }
-        static double RetirerRemiseFixe(double price)
+        static void Afficher(List<Voiture> catalogue, Predicate<Voiture> critere)
         {
-            price -= 1000;
-            return price;
+            foreach (Voiture v in catalogue)
+            {
+                if (critere(v))
+                {
+                    Console.WriteLine(v.Modele);
+                }
+            }
         }
 
-        static double AjouterTva(double price)
+        static void Compter(List<Voiture> catalogue, Predicate<Voiture> critere)
         {
-            price *= 1.081;
-            return price;
-        }
-        static string EtiquetteDe(Voiture v)
-        {
-            return $"{v.Marque} {v.Modele} ({v.Annee})";
+            var count = 0;
+            foreach (Voiture voiture in catalogue)
+            {
+                if (critere(voiture))
+                {
+                    count++;
+                }
+                
+            }
+            Console.WriteLine($"{count} voitures trouvées !!");
         }
         
     }

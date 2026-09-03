@@ -1,4 +1,4 @@
-namespace test;
+namespace UE02;
 
 public class Donnée
 {
