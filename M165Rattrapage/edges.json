@@ -1,12 +1,12 @@
 [
-  {"_key": "edge1", "from": "./nodes/A", "to": "./nodes/B"},
-  {"_key": "edge2", "from": "./nodes/A", "to": "./nodes/C"},
-  {"_key": "edge3", "from": "./nodes/A", "to": "./nodes/D"},
+  {"_key": "edge1", "_from": "./nodes/A", "_to": "./nodes/B"},
+  {"_key": "edge2", "_from": "./nodes/A", "_to": "./nodes/C"},
+  {"_key": "edge3", "_from": "./nodes/A", "_to": "./nodes/D"},
 
-  {"_key": "edge4", "from": "./nodes/B", "to": "./nodes/E"},
-  {"_key": "edge5", "from": "./nodes/B", "to": "./nodes/F"},
+  {"_key": "edge4", "_from": "./nodes/B", "_to": "./nodes/E"},
+  {"_key": "edge5", "_from": "./nodes/B", "_to": "./nodes/F"},
 
-  {"_key": "edge6", "from": "./nodes/D", "to": "./nodes/G"},
-  {"_key": "edge7", "from": "./nodes/D", "to": "./nodes/H"},
-  {"_key": "edge8", "from": "./nodes/D", "to": "./nodes/I"}
+  {"_key": "edge6", "_from": "./nodes/D", "_to": "./nodes/G"},
+  {"_key": "edge7", "_from": "./nodes/D", "_to": "./nodes/H"},
+  {"_key": "edge8", "_from": "./nodes/D", "_to": "./nodes/I"}
 ]
