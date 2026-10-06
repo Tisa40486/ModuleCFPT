@@ -9,4 +9,32 @@ docker exec -it arangodb-instance arangoimport --file /import/edges.json --creat
 docker exec -it arangodb-instance arangoimport --file /import/AndorreNodes.json --create-database true --server.database Andorra --collection nodes --create-collection true --type json
 docker exec -it arangodb-instance arangoimport --file /import/AndorreEdges.json --create-database true --server.database Andorra --collection edges --create-collection true --type json --create-collection-type edge
 
+docker exec -it arangodb-instance arangoimport --file /import/points.json --create-database true --server.database Andorra --collection nodes --create-collection true --type json
+docker exec -it arangodb-instance arangoimport --file /import/ways.json --create-database true --server.database Andorra --collection edges --create-collection true --type json --create-collection-type edge
 
+
+
+
+FOR n IN nodes
+  filter n.latitude == 42.5470848 AND n.longitude == 1.5918017
+  return n
+
+FOR n IN nodes
+  FILTER n.latitude == 42.5470848 AND n.longitude == 1.5918017
+  RETURN GEO_POINT(n.longitude, n.latitude)
+
+
+
+FOR n IN nodes
+  filter n.latitude == 42.5526845 AND n.longitude == 1.5365795
+  return n
+  
+FOR n IN nodes
+  FILTER n.latitude == 42.5526845 AND n.longitude == 1.5365795
+  RETURN GEO_POINT(n.longitude, n.latitude)
+
+
+
+FOR n IN OUTBOUND
+  SHORTEST_PATH 'nodes/654' TO 'nodes/1955' edges
+  return n
