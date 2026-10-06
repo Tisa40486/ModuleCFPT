@@ -49,6 +49,7 @@ public class FacturationTests
         //Assert
         Assert.Equal([830, 1770], values.Select(x => x.Cout));
     }
+
     // A COMPLETER exercice 2 : les bords
     [Fact]
     public void Total_CatalogueVide_RendZero()
@@ -86,8 +87,18 @@ public class FacturationTests
     public void AvecRevisions_VoitureSansRevision_NApparaitPas()
     {
         //arrange 
-        var result = Donnees.ChargerCatalogue().Where(v => v.Modele == "Serie 1").ToList();
+        var catalogue = Donnees.ChargerCatalogue()
+            .Where(
+                v => v.Modele == "Serie 1"
+                &&
+                v.Kilometrage == 95000)
+            .ToList();
+        var revision = Donnees.ChargerRevisions();
+
+        var result = Facturation.AvecRevisions(catalogue, revision);
 
         Assert.Empty(result);
     }
+
+    // A COMPLETER exercice 3 : La même somme, sur tous les coeurs
 }
