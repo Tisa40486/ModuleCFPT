@@ -1,0 +1,14 @@
+[
+    {
+        "_from" : "AndorreNodes/1",
+        "_to" : "AndorreNodes/2",
+        "km" : "0.0343662",
+        "cost" : "0.0343662"
+    },
+    {
+        "_from" : "AndorreNodes/3",
+        "_to" : "AndorreNodes/2162",
+        "km" : "0.0343620",
+        "cost" : "0.0343662"
+    }
+]

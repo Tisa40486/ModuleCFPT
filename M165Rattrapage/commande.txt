@@ -6,3 +6,7 @@ docker exec -it arangodb-instance arangoimport --file /import/flights.csv --crea
 docker exec -it arangodb-instance arangoimport --file /import/nodes.json --create-database true --server.database Node-Edges --collection nodes --create-collection true --type json
 docker exec -it arangodb-instance arangoimport --file /import/edges.json --create-database true --server.database Node-Edges --collection edges --create-collection true --type json --create-collection-type edge
 
+docker exec -it arangodb-instance arangoimport --file /import/AndorreNodes.json --create-database true --server.database Andorra --collection nodes --create-collection true --type json
+docker exec -it arangodb-instance arangoimport --file /import/AndorreEdges.json --create-database true --server.database Andorra --collection edges --create-collection true --type json --create-collection-type edge
+
+
