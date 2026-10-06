@@ -17,19 +17,19 @@ public static class Parallele
     public static int SommeIndices(List<Voiture> catalogue)
     {
         // A COMPLETER etape 1 : la somme des indices, un pipeline LINQ ordinaire
-        throw new NotImplementedException();
+        return catalogue.Select(v => IndiceEtat(v)).Sum();
     }
 
     public static int SommeIndicesParallele(List<Voiture> catalogue)
     {
         // A COMPLETER etape 2 : le meme pipeline, parallele
-        throw new NotImplementedException();
+        return catalogue.AsParallel().Select(v => IndiceEtat(v)).Sum();
     }
 
     public static string ModelesDansLOrdre(List<Voiture> catalogue)
     {
         // A COMPLETER etape 4 : les modeles separes par ", ", dans l'ordre du catalogue, malgre le parallele
-        throw new NotImplementedException();
+        return string.Join(", ", catalogue.AsParallel().AsOrdered().Select(v => v.Modele));
     }
 
     // Fourni : mesure une version de la somme, en millisecondes.
