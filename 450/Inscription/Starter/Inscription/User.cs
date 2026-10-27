@@ -37,6 +37,9 @@
             if (string.IsNullOrEmpty(email))
                 throw new ArgumentException("Un email ne peut pas être vide");
 
+            if (string.IsNullOrEmpty(password))
+                throw new ArgumentException("Un mot de passe ne peut pas être vide");
+
             _email = email;
             _password = password;
         }
